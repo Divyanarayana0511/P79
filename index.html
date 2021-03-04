@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <div>
+            <ul><li><a href="#menu-holder">View Menu</a></li>
+            <li onclick="createmenu()">Create menu</li></ul>
+        </div>
+    </div>
+    <div id="welcome"> Welcome to Pizzeria</div>
+    <div class="content">
+            
+        <div class="row">
+            <h1 style="color: white;">Create your own pizza!!</h1>
+            <input type="text" id="newitem" alt="Add your creation here">
+            <button type="button" class="buttonmenu" onclick="newmenu()" id="additem">Add Pizza </button>
+        </div>
+         <div class="row">
+             <button  type="button" class="buttonmenu"id="menu-holder" onclick="showmenu()">Show menu</button>
+            <div id="displaymenu"></div>
+        </div>
+    
+    </div>
+
+</body>
+</html>
